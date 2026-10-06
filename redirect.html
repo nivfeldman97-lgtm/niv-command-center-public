@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Microsoft sign in</title></head>
+<body><p id="status">Completing Microsoft sign in…</p><script type="module">
+  import { broadcastResponseToMainFrame } from '@azure/msal-browser/redirect-bridge'
+  broadcastResponseToMainFrame().catch(() => {
+    document.getElementById('status').textContent = 'Return to the dashboard and try Connect Microsoft again.'
+  })
+</script></body></html>

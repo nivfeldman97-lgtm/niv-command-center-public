@@ -1,0 +1,44 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+# Dependencies, generated output, caches and logs
+node_modules/
+dist/
+coverage/
+.vite/
+.cache/
+.npm-cache/
+*.log
+# Browser downloads, profiles, auth state and test artifacts
+.playwright-browsers/
+playwright/.auth/
+playwright-report/
+blob-report/
+test-results/
+browser-profile*/
+session-profile*/
+*storage-state*.json
+*auth-state*.json
+# Hosting/editor/OS metadata and local exports
+.vercel/
+.netlify/
+.supabase/
+supabase/.temp/
+.vscode/
+.idea/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+exports/
+private/

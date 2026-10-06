@@ -1,0 +1,35 @@
+{
+  "name": "niv-command-center-public",
+  "private": true,
+  "version": "0.4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "playwright test",
+    "test:pwa": "playwright test --config playwright.pwa.config.js",
+    "build:test": "node scripts/build-test.mjs",
+    "test:all": "npm test && npm run test:browser && npm run test:pwa"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^5.21.0",
+    "@supabase/supabase-js": "^2.116.0",
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@playwright/test": "^1.63.0",
+    "vite-plugin-pwa": "^1.3.0"
+  },
+  "description": "A personal dashboard connecting Outlook and Microsoft To Do with goals, milestones, planning blocks and a Gantt timeline.",
+  "license": "MIT",
+  "author": "Niv Feldman",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

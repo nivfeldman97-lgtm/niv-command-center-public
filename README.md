@@ -12,7 +12,7 @@ Your existing To Do lists can represent different areas of life, such as Work, S
 
 ## Features
 
-- Weekly Outlook calendar with category colors, all-day events and overlap handling.
+- Sunday-to-Saturday weekly Outlook calendar with category colors, all-day events and overlap handling.
 - Microsoft To Do filters for Today, Important, Courses and Overdue. Completed tasks are excluded from live reads and the Supabase cache.
 - Dashboard Today includes tasks due today plus tasks manually selected for Today inside Niv Command Center. Selections sync across your devices through Supabase; Microsoft To Do itself remains read-only.
 - Editable goals, milestones and a yearly Gantt with draggable/resizable date ranges.
@@ -23,13 +23,17 @@ Your existing To Do lists can represent different areas of life, such as Work, S
 
 ## Screenshots
 
-Desktop and mobile/PWA screenshots will be added here.
+**Desktop overview** — Daily work and longer-term planning in one dashboard.
 
-<!-- Add only sanitized screenshots, then insert their Markdown image links here:
-Desktop dashboard: docs/screenshots/desktop-dashboard.png
-Mobile/PWA: docs/screenshots/mobile-pwa.png
-Optional Gantt/calendar detail: docs/screenshots/planning-detail.png
--->
+![Niv Command Center desktop dashboard overview](docs/screenshots/desktop-overview.png)
+
+**Weekly calendar and Microsoft To Do** — Outlook commitments alongside tasks for the week.
+
+![Weekly Outlook calendar and Microsoft To Do tasks](docs/screenshots/calendar-todo.png)
+
+**Gantt and milestones** — Longer-term goals and milestones on a yearly timeline.
+
+![Long-term goals and milestones in the Gantt view](docs/screenshots/gantt-milestones.png)
 
 ## Architecture and data flow
 
